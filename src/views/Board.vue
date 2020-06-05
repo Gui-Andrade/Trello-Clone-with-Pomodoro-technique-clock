@@ -19,23 +19,23 @@
         />
       </div>
     </div>
-
     <div class="task-bg"
       v-if="isTaskOpen"
       @click.self="close"
       >
       <router-view />
     </div>
-
+    <pomodoro-clock/>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 import BoardColumn from '@/components/BoardColumn.vue'
+import PomodoroClock from '@/components/PomodoroClock.vue'
 
 export default {
-  components: { BoardColumn },
+  components: { BoardColumn, PomodoroClock },
   data () {
     return {
       newColumnName: ''
