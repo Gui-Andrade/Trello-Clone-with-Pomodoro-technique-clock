@@ -2,7 +2,7 @@
   <div class="pomodoro-timer">
     <div class="pomodoro-timer__controls">
       <button class="pomodoro-timer__button" @click="resetTimer">Reset Timer</button>
-      <button class="pomodoro-timer__button" @click="restartTimer">Pomodoro Work</button>
+      <button class="pomodoro-timer__button" @click="restartTimer">Start Pomodoro</button>
       <!-- <button class="pomodoro-timer__button" @click="startTimer(300)">Break</button>
       <button class="pomodoro-timer__button" @click="startTimer(1200)">Longer Break</button> -->
     </div>
