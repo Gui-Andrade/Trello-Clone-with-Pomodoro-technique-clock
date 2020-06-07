@@ -10,18 +10,21 @@ export default {
           description: 'Test description',
           name: 'first task',
           id: uuid(),
+          pomodorosDone: 0,
           userAssigned: null
         },
         {
           description: '',
           name: 'second task',
           id: uuid(),
+          pomodorosDone: 0,
           userAssigned: null
         },
         {
           description: '',
           name: 'and thrid',
           id: uuid(),
+          pomodorosDone: 0,
           userAssigned: null
         }
       ]
@@ -33,6 +36,7 @@ export default {
           description: '',
           name: 'first task',
           id: uuid(),
+          pomodorosDone: 0,
           userAssigned: null
         }
       ]
@@ -44,6 +48,7 @@ export default {
           description: '',
           name: 'first task',
           id: uuid(),
+          pomodorosDone: 0,
           userAssigned: null
         }
       ]

@@ -15,7 +15,7 @@
       >
       </textarea>
 
-      <pomodoro-clock/>
+      <pomodoro-clock v-on:incrementPomodoroBy="incrementPomodoro"/>
 
       <p>
         Pomodoros used working on this task: {{ pomodorosDone }}
@@ -48,6 +48,9 @@ export default {
         key,
         value: e.target.value
       })
+    },
+    incrementPomodoro: function (pomValue) { 
+      this.pomodorosDone = this.pomodorosDone + pomValue
     }
   }
 }

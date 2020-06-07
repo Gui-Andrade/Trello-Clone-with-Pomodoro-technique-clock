@@ -101,6 +101,7 @@ export default {
   },
   methods: {
     onTimesUp () {
+      this.$emit('incrementPomodoroBy', 1)
       clearInterval(this.timerInterval)
     },
     startTimer () {
