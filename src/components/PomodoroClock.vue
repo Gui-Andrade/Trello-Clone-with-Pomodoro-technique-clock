@@ -1,10 +1,8 @@
 <template>
   <div class="pomodoro-timer">
     <div class="pomodoro-timer__controls">
-      <button class="pomodoro-timer__button" @click="resetTimer">Reset Timer</button>
-      <button class="pomodoro-timer__button" @click="restartTimer">Start Pomodoro</button>
-      <!-- <button class="pomodoro-timer__button" @click="startTimer(300)">Break</button>
-      <button class="pomodoro-timer__button" @click="startTimer(1200)">Longer Break</button> -->
+      <button class="pomodoro-timer__button" @click="resetTimer">Reset</button>
+      <button class="pomodoro-timer__button" @click="restartTimer">Start</button>
     </div>
     <div class="base-timer">
       <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -123,10 +121,10 @@ export default {
 </script>
 <style scoped lang="scss">
 .base-timer {
-  margin: 30px;
+  margin: 10px;
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
 
   &__svg {
     transform: scaleX(-1);
@@ -166,20 +164,20 @@ export default {
 
   &__label {
     position: absolute;
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 
 .pomodoro-timer__controls {
   display: flex;
   margin-top: 40px;
-  max-width: 400px;
+  max-width: 120px;
 }
 
 .pomodoro-timer__controls > * {
@@ -202,17 +200,17 @@ export default {
   border: 0;
   cursor: pointer;
   color: white;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background: rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  /* text-transform: uppercase; */
+  background: rgba(5, 39, 45, 0.6);
   border-bottom: 3px solid rgba(0,0,0,0.2);
   border-right: 1px solid rgba(0,0,0,0.2);
-  padding: 0.8rem;
+  padding: 0.3rem;
 }
 
 .pomodoro-timer__button:hover,
 .pomodoro-timer__button:focus {
-  background: rgba(0,0,0,0.2);
+  background: rgba(33, 76, 109, 0.6);
   outline: 0;
 }
 </style>

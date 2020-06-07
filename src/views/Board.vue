@@ -25,17 +25,15 @@
       >
       <router-view />
     </div>
-    <pomodoro-clock/>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 import BoardColumn from '@/components/BoardColumn.vue'
-import PomodoroClock from '@/components/PomodoroClock.vue'
 
 export default {
-  components: { BoardColumn, PomodoroClock },
+  components: { BoardColumn },
   data () {
     return {
       newColumnName: ''

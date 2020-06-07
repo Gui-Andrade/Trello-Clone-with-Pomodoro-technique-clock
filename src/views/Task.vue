@@ -14,13 +14,17 @@
       @change="updateTaskProperty($event, 'description')"
       >
       </textarea>
+
+      <pomodoro-clock/>
     </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
+import PomodoroClock from '@/components/PomodoroClock.vue'
 export default {
+  components: { PomodoroClock },
   computed: {
     ...mapGetters(['getTask']),
     task () {

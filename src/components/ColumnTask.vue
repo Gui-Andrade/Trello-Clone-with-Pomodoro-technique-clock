@@ -9,9 +9,9 @@
         fromColumnIndex: columnIndex,
         fromTaskIndex: taskIndex
       }"
-      @click="goToTask(task)"
     >
-      <span class="w-full flex-no-shrink font-bold">
+      <span class="w-full flex-no-shrink font-bold"
+      @click="goToTask(task)">
         {{ task.name }}
       </span>
       <p
@@ -54,5 +54,4 @@ export default {
 .task {
   @apply flex items-center flex-wrap shadow mb-2 py-2 px-2 rounded bg-white text-grey-darkest no-underline;
 }
-
 </style>
