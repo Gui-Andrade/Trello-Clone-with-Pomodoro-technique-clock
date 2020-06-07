@@ -16,6 +16,10 @@
       </textarea>
 
       <pomodoro-clock/>
+
+      <p>
+        Pomodoros used working on this task: {{ pomodorosDone }}
+      </p>
     </div>
   </div>
 </template>
@@ -24,6 +28,12 @@
 import { mapGetters } from 'vuex'
 import PomodoroClock from '@/components/PomodoroClock.vue'
 export default {
+  data() {
+    return {
+      pomodorosDone: 0
+      // Add functionality to track when pomodoros are done and add them to the task
+    }
+  },
   components: { PomodoroClock },
   computed: {
     ...mapGetters(['getTask']),
